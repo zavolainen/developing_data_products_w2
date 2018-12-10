@@ -1,0 +1,20 @@
+---
+title: "My hometown"
+author: "Jani Savolainen"
+date: "10 December 2018"
+output: html_document
+---
+
+This page is part of the Coursera Data Science Specialization Course Developing Data Products. The aim is to create an online page with a map created with Leaflet package.
+
+```{r}
+
+suppressMessages(library(leaflet))
+suppressMessages(library(dplyr))
+
+leaflet() %>% addTiles() %>% addMarkers(lat=61.8947473, lng=27.8617614, popup = "Juva, my hometown")
+
+```
+
+
+
